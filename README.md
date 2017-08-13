@@ -14,10 +14,8 @@ composer global require "fxp/composer-asset-plugin:^1.2.0"
 2. Клонируем проект
 
 ```
-git clone ${url} .
+git clone https://github.com/pptp/test20170813.git .
 ```
-
-где ${url} - УРЛ этого репозитария
 
 
 3. Устанавливаем зависимости
