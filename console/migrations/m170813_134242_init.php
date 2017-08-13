@@ -144,6 +144,10 @@ class m170813_134242_init extends Migration
                           ADD CONSTRAINT `tb_wallets_ibfk_1` FOREIGN KEY (`customerId`) REFERENCES `tb_customers` (`id`),
                           ADD CONSTRAINT `tb_wallets_ibfk_2` FOREIGN KEY (`currencyId`) REFERENCES `tb_currencies` (`id`);',
         ];
+
+        foreach ($sqls as $sql) {
+            $this->execute($sql);
+        }
     }
 
     public function safeDown()
